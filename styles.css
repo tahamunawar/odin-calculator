@@ -10,16 +10,18 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: lightgray;
 }
 
 .calculator {
-    border: 5px black solid;
     width: 400px;
     height: 500px;
     display: flex;
     flex-direction: column;
     gap: 5px;
     background-color: black;
+    border: solid 5px grey;
+    padding: 5px;
 }
 
 .screen {
