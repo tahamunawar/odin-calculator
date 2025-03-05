@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
+    border: 5px black solid;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: black;
+}
+
+.screen {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    flex: 1;
+    box-sizing: border-box;
+    background-color: black;
+    font-size: 60px;
+    color: white;
+    padding: 5px;
+    /* overflow: hidden; */
+}
+
+.button-row {
+    width: 100%;
+    border: 2px black solid;
+    box-sizing: border-box;
+    flex: 1;
+    display: flex;
+    background-color: black;
+    gap: 10px;
+}
+
+.button {
+    flex: 1;
+    border: 1px black solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 30px;
+    transition: background-color 0.08s ease;
+    user-select: none;
+}
+
+#butt0{
+    flex:2.12
+}
+
+.op-button, .eq-button{
+    background-color: #fe9f06;
+    color: white
+}
+
+.all-clear, .plus-minus, .percentage{
+    background-color: #a5a5a5;
+    color: black;
+}
+
+.num-button, .decimal-button{
+    background-color: #333333;
+    color: white;
+}
+
+/* CLAUDE STUFF */
+
+.button-pressed {
+    opacity: 0.7;  /* Keep this for the blinking effect */
+    /* Remove the transform: scale property */
+}
+
+  
